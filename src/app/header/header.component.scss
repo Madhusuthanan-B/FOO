@@ -1,0 +1,20 @@
+header {
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    .nav__link {
+        margin: 1rem;
+        padding: 0 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
