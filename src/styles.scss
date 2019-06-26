@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    -webkit-font-smoothing: antialiased;
+    margin: 0px;
+    font: 1.125em/1.5 Interface, "Helvetica Neue", helvetica, sans-serif;
+    background: black;
+    color: white;
+}
