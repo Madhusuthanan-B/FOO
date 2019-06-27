@@ -10,11 +10,18 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
+
     .nav__link {
         margin: 1rem;
-        padding: 0 1rem;
+        padding: 1rem;
         color: #fff;
         text-decoration: none;
         font-weight: bold;
+        border-bottom: 3px solid transparent;
+        &:hover {
+            border-bottom: 3px solid rgb(0, 230, 204);
+        }
     }
+
+    
 }
