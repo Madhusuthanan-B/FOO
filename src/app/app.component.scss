@@ -12,18 +12,15 @@
     }
 
     .header_container {
-        background-image: url("../assets/gif/dark_3d.gif");
+        background-image: url("../assets/gif/dark_motion.gif");
         background-color: black;
-        background-position: right;
-        background-repeat: no-repeat;
         display: flex;
-        opacity: 0.9;
         justify-content: space-between;
         padding-top: 0;
 
         .header_left {
             p{
-                color: #00E6CC
+                color: lightgray;
             }
         }
     }
