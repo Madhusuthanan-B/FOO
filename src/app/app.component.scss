@@ -1,5 +1,5 @@
 .content {
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     section {
         margin: 1rem 0;
@@ -12,13 +12,18 @@
     }
 
     .header_container {
+        background-image: url("../assets/gif/dark_3d.gif");
+        background-color: black;
+        background-position: right;
+        background-repeat: no-repeat;
         display: flex;
+        opacity: 0.9;
         justify-content: space-between;
         padding-top: 0;
 
         .header_left {
             p{
-                color: gray
+                color: #00E6CC
             }
         }
     }
