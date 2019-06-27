@@ -3,7 +3,7 @@
   "short_name": "FOO",
   "theme_color": "#1976d2",
   "background_color": "#000",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "icons": [
