@@ -1,3 +1,5 @@
+@import '_mixins';
+
 header {
     position: sticky;
     z-index: 2;
@@ -63,4 +65,10 @@ nav {
     }
 
 
+}
+
+@include for-phone-only {
+    nav {
+        display: none;
+    }
 }
