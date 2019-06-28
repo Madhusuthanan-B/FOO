@@ -1,5 +1,7 @@
+@import '_mixins';
+
 .content {
-    margin-top: 3rem;
+    margin: 3rem 1rem 0 1rem;
 
     section {
         margin: 1rem 0;
@@ -19,7 +21,7 @@
         padding-top: 0;
 
         .header_left {
-            p{
+            p {
                 color: lightgray;
             }
         }
@@ -31,6 +33,14 @@
 
     .banner_2 {
         background: linear-gradient(to right, #8C4AF5, #19F2A1);
-        
+
+    }
+}
+
+@include for-phone-only {
+    .content {
+        .banner {
+            padding: 3rem;
+        }
     }
 }
