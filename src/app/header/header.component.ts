@@ -7,10 +7,15 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
+  closeButtonClass = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleMenu() {
+    this.closeButtonClass = this.closeButtonClass === 'change' ? '' : 'change';
   }
 
 }
