@@ -18,9 +18,9 @@
       "type": "image/png"
     },
     {
-      "src": "assets/gif/dark_motion.gif",
-      "sizes": "500x500",
-      "type": "image/gif"
+      "src": "assets/icons/foo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
