@@ -8,6 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   closeButtonClass = '';
+  isNavMenuOpen = false;
 
   constructor() { }
 
@@ -16,6 +17,7 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     this.closeButtonClass = this.closeButtonClass === 'change' ? '' : 'change';
+    this.isNavMenuOpen = !this.isNavMenuOpen;
   }
 
 }

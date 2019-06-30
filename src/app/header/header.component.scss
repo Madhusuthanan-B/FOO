@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 
 header {
     position: sticky;
@@ -6,7 +7,7 @@ header {
     top: 0px;
     display: flex;
     justify-content: space-between;
-    background: black;
+    background: $base-bg;
 
     .logo_wrapper {
         display: flex;
@@ -35,33 +36,6 @@ header {
             align-items: center
         }
     }
-
-    .hamburger {
-        display: none;
-        cursor: pointer;
-        margin: 1rem;
-        padding: 1rem;
-      }
-      
-      .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 2px;
-        background-color: #19F2A1;
-        margin: 6px 0;
-        transition: 0.4s;
-      }
-      
-      .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-      }
-      
-      .change .bar2 {opacity: 0;}
-      
-      .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        transform: rotate(45deg) translate(-8px, -8px);
-      }
 }
 
 @keyframes shake {
@@ -81,27 +55,123 @@ nav {
     .nav__link {
         margin: 1rem;
         padding: 1rem;
-        color: #fff;
+        color: $base-font;
         text-decoration: none;
         font-weight: bold;
         border-bottom: 3px solid transparent;
 
         &:hover {
-            border-bottom: 3px solid rgb(0, 230, 204);
+            border-bottom: 3px solid $base-menu
         }
     }
 
+}
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: $base-menu;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: $base-menu;
+}
+
+
+#mobileNav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $base-bg;
+    opacity: 0.9;
+    z-index: 2;
+
+    .mobile-nav-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        padding: 2rem;
+    }
 }
 
 @include for-phone-only {
+
     .nav__link {
         display: none;
     }
+
+    #mobileNav {
+        display: block;
+
+        .mobile-nav-menu {
+            .nav__link {
+                display: block;
+            }
+        }
+    }
+
     header {
         .hamburger {
             display: inline-block;
         }
     }
-    
+
 }
