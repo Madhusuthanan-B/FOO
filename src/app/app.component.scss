@@ -2,39 +2,6 @@
 
 .content {
     margin: 3rem 1rem 0 1rem;
-
-    section {
-        margin: 1rem 0;
-    }
-
-    .banner {
-        color: #ffffff;
-        padding: 10rem;
-        text-align: center;
-    }
-
-    .header_container {
-        background-image: url("../assets/gif/dark_motion.gif");
-        background-color: black;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 0;
-
-        .header_left {
-            p {
-                color: lightgray;
-            }
-        }
-    }
-
-    .banner_1 {
-        background: linear-gradient(to right, #8C4AF5, #6881DA);
-    }
-
-    .banner_2 {
-        background: linear-gradient(to right, #8C4AF5, #19F2A1);
-
-    }
 }
 
 @include for-phone-only {

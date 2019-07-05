@@ -5,7 +5,8 @@
         <div class="caption">Tech forum</div>
     </div>
     <nav>
-        <a class="nav__link" href="#">About</a>
+        <a class="nav__link" [routerLink]="['/home']">Home</a>
+        <a class="nav__link" [routerLink]="['/foo-design-system']">Design System</a>
         <a class="nav__link" href="#">Blogs</a>
         <div class="hamburger" *ngIf="!isNavMenuOpen" (click)="toggleMenu()">
             <div class="bar1"></div>
@@ -20,6 +21,7 @@
     <a href="javascript:void(0);" class="close" (click)="toggleMenu()"></a>
     <nav class="mobile-nav-menu">
         <a class="nav__link" href="#">About</a>
+        <a class="nav__link" href="#">Design System</a>
         <a class="nav__link" href="#">Blogs</a>
     </nav>
 </div>
