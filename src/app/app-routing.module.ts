@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'foo-design-system',
-    loadChildren: () => import(`./design-system/design-system.module`).then(m => m.DesignSystemModule)
+    loadChildren: () => import('./design-system/design-system.module').then(m => m.DesignSystemModule)
   }
 ];
 
