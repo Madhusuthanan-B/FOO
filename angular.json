@@ -36,7 +36,9 @@
                 "src/assets/scss"
               ]
             },
-            "scripts": []
+            "scripts": [
+              "src/assets/plotly-latest.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -104,7 +106,9 @@
                 "src/assets/scss"
               ]
             },
-            "scripts": []
+            "scripts": [
+              "src/assets/plotly-latest.min.js"
+            ]
           }
         },
         "lint": {
