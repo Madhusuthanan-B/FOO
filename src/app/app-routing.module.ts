@@ -10,8 +10,8 @@ const routes: Routes = [
     path: 'home', component: HomeComponent
   },
   {
-    path: 'foo-design-system',
-    loadChildren: () => import('./design-system/design-system.module').then(m => m.DesignSystemModule)
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   }
 ];
 

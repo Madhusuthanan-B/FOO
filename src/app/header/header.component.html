@@ -2,13 +2,12 @@
     <div class="logo_wrapper">
         <img src="assets/svg/value.svg" alt="Foo logo">
         <h2 class="app_title">Foo</h2>
-        <div class="caption">Tech forum</div>
+        <div class="caption">Tech Blogs</div>
     </div>
     <nav>
         <a class="nav__link" [routerLink]="['/home']">Home</a>
-        <a class="nav__link" [routerLink]="['/foo-design-system']">Graph</a>
+        <a class="nav__link" [routerLink]="['/about']">About Me</a>
         <a class="nav__link" href="#">Blogs</a>
-        <a class="nav__link" href="#">Login</a>
         <div class="hamburger" *ngIf="!isNavMenuOpen" (click)="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -21,9 +20,8 @@
 <div id="mobileNav" *ngIf="isNavMenuOpen">
     <a href="javascript:void(0);" class="close" (click)="toggleMenu()"></a>
     <nav class="mobile-nav-menu">
-        <a class="nav__link" href="#">About</a>
-        <a class="nav__link" href="#">Graph</a>
+        <a class="nav__link" href="#">Home</a>
+        <a class="nav__link"  [routerLink]="['/about']">About Me</a>
         <a class="nav__link" href="#">Blogs</a>
-        <a class="nav__link" href="#">Login</a>
     </nav>
 </div>

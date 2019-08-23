@@ -1,0 +1,219 @@
+//variables
+$foreground-color: white;
+$background-color: black;
+$border-radius: 50%;
+$font-size: 25px;
+
+
+.effect {
+    width: 100%;
+    background-color: $foreground-color;
+
+    h2 {
+        color: $background-color;
+
+        font: {
+            family: 'Playfair Display', serif;
+            weight: 400;
+            size: 25px;
+        }
+
+        letter-spacing: 3px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    &:nth-child(2n+1) {
+        background-color: $background-color;
+
+        h2 {
+            color: $foreground-color;
+        }
+    }
+
+    &:nth-child(2n) {
+
+        a {
+            color: $background-color;
+            border-color: $background-color;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* styles for a common effect !!!YOU NEED THEM */
+.effect {
+    /*display: flex; !!!uncomment this line !!!*/
+
+    a {
+        text-decoration: none !important;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $border-radius;
+        margin-right: 20px;
+        font-size: $font-size;
+        overflow: hidden;
+        position: relative;
+        color: $foreground-color; //or change to your own color
+        border: 2px solid $foreground-color; //or change to your own color
+
+        i {
+            position: relative;
+            z-index: 3;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+/* lavinia effect */
+.effect.lavinia {
+
+    a {
+
+        transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+        overflow: visible;
+
+        &:hover {
+            border-color: rgba($background-color, 0);
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: -2px;
+            left: -2px;
+            border: 2px dashed $background-color;
+            position: absolute;
+            border-radius: $border-radius;
+        }
+    }
+}
+
+/* varrius effect */
+.effect.varrius {
+
+    a {
+        transition: all 0.2s linear 0s;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 90%;
+            height: 90%;
+            top: -110%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            background-color: $foreground-color;
+            border-radius: $border-radius;
+        }
+
+        &:hover {
+            color: $background-color;
+
+            &:after {
+                top: 5%;
+                transition: all 0.2s linear 0s;
+            }
+        }
+    }
+}
+
+/* thurio effect */
+
+.effect.thurio {
+
+    a {
+        transition: border-radius 0.2s linear 0s;
+        transform: rotate(45deg);
+
+        i {
+            transition: transform 0.01s linear 0s;
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            border-radius: 0px;
+        }
+    }
+}
+
+/* amiens effect */
+.effect.amiens {
+
+    a {
+        transition: all 0.2s linear 0.2s;
+
+        i {
+            transition: all 0.2s linear 0s;
+        }
+
+        &:hover {
+            transition: all 0.2s linear 0s;
+            border-color: rgba($foreground-color, 0);
+
+            i {
+                transform: scale(1.15);
+                text-shadow: 4px 0px 3px rgba($foreground-color, 0.3);
+                transition: all 0.2s linear 0.2s;
+            }
+        }
+    }
+}
+
+/* solanio effect */
+.effect.solanio {
+
+    a {
+        border: none;
+        overflow: visible;
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $background-color;
+            border-radius: $border-radius;
+            transition: all 0.2s linear 0s;
+        }
+
+        &:hover {
+
+            &:after {
+                height: 0px;
+                top: 100%;
+            }
+        }
+    }
+}

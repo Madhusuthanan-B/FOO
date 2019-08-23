@@ -1,10 +1,13 @@
+@import '_mixins';
+@import '_variables';
+
 section {
     margin: 1rem 0;
 }
 
 .banner {
     color: #ffffff;
-    padding: 10rem;
+    padding: 3rem;
     text-align: center;
 }
 
@@ -29,4 +32,10 @@ section {
 .banner_2 {
     background: linear-gradient(to right, #8C4AF5, #19F2A1);
 
+}
+
+@include for-desktop-up {
+    .banner {
+        padding: 3rem;
+    }
 }
