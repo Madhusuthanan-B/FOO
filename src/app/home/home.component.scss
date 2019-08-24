@@ -5,6 +5,23 @@ section {
     margin: 1rem 0;
 }
 
+.neon {
+    color: #19F2A1;
+    padding: 1rem;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    border-color: #19F2A1;
+    margin: 1rem;
+    background: black;
+
+    &:hover {
+        cursor: pointer;
+        color: lighten($color: #19F2A1, $amount: 20%);
+        border-color: #6881DA;
+    }
+}
+
 .banner {
     color: #ffffff;
     padding: 3rem;
@@ -15,12 +32,20 @@ section {
     background-image: url("../../assets/gif/dark_motion.gif");
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem 6rem 3rem;
 
     .header_left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
         p {
             color: lightgray;
+            margin: 0;
         }
     }
 }

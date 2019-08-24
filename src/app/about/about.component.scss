@@ -17,7 +17,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #19F2A1;
     margin: 1em 3em;
     padding: 0;
 }
@@ -27,6 +27,7 @@ hr {
     justify-content: center;
     flex-direction: column;
     margin: 1em 3em;
+
     p {
         margin: 1em 2em;
         text-align: center;
@@ -34,17 +35,23 @@ hr {
 
     h3 {
         text-align: center;
+        color: #19F2A1;
     }
+
     .skills {
         display: flex;
         justify-content: space-evenly;
+
         ul {
             display: flex;
             flex-wrap: wrap;
         }
+
         li {
             padding: 1rem;
             list-style: none;
+            min-width: 200px;
+            max-width: 200px;
         }
     }
 }
@@ -52,8 +59,16 @@ hr {
 @include for-phone-only {
     .about_body {
         flex-direction: column;
+
         .about_me {
             max-width: 100%;
+        }
+
+        .skills {
+            li {
+                min-width: 100px;
+                max-width: 100px;
+            }
         }
     }
 }
