@@ -14,7 +14,6 @@ export class RatingComponent implements OnInit {
   ngOnInit() {
     this.totalStars = 5;
     this.starCount = Array(this.totalStars).fill(this.totalStars).map((x, i) => i);
-    console.log('fill', this.starCount);
   }
 
 }
