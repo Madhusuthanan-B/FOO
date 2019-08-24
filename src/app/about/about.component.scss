@@ -27,9 +27,25 @@ hr {
     justify-content: center;
     flex-direction: column;
     margin: 1em 3em;
+    p {
+        margin: 1em 2em;
+        text-align: center;
+    }
 
     h3 {
         text-align: center;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-evenly;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            padding: 1rem;
+            list-style: none;
+        }
     }
 }
 
