@@ -1,4 +1,5 @@
 @import '_mixins';
+@import '_variables';
 
 .about_head {
     display: flex;
@@ -17,7 +18,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #19F2A1;
+    border-top: 1px solid $primary;
     margin: 1em 3em;
     padding: 0;
 }
@@ -35,7 +36,7 @@ hr {
 
     h3 {
         text-align: center;
-        color: #19F2A1;
+        color: $primary;
     }
 
     .skills {

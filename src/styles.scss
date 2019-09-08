@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, $secondary-menu, $base-menu);
+    background: linear-gradient(to bottom, $secondary, $primary);
 }
 
 body::-webkit-scrollbar {
@@ -28,6 +28,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: $base-menu;
-    outline: 1px solid $secondary-menu;
+    background-color: $primary;
+    outline: 1px solid $secondary;
 }

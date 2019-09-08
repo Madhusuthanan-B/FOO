@@ -65,13 +65,13 @@ nav {
         border-bottom: 3px solid transparent;
 
         &:hover {
-            border-bottom: 3px solid $base-menu;
+            border-bottom: 3px solid $primary;
             cursor: pointer;
         }
     }
 
     .active {
-        border-bottom: 3px solid $base-menu;
+        border-bottom: 3px solid $primary;
     }
 
 
@@ -89,7 +89,7 @@ nav {
 .bar3 {
     width: 35px;
     height: 2px;
-    background-color: $base-menu;
+    background-color: $primary;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -136,7 +136,7 @@ nav {
     content: ' ';
     height: 33px;
     width: 2px;
-    background-color: $base-menu;
+    background-color: $primary;
 }
 
 
