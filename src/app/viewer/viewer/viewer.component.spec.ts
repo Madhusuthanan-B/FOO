@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DesignSystemComponent } from './design-system.component';
+import { ViewerComponent } from './viewer.component';
 
-describe('DesignSystemComponent', () => {
-  let component: DesignSystemComponent;
-  let fixture: ComponentFixture<DesignSystemComponent>;
+describe('ViewerComponent', () => {
+  let component: ViewerComponent;
+  let fixture: ComponentFixture<ViewerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DesignSystemComponent ]
+      declarations: [ ViewerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DesignSystemComponent);
+    fixture = TestBed.createComponent(ViewerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
