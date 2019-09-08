@@ -14,6 +14,12 @@ import { Router } from '@angular/router';
   }
 
   blogs() {
+    (window as any).ga('send', 'event', {
+      eventCategory: 'eventCategory',
+      eventLabel: 'Blog',
+      eventAction: 'eventAction',
+      eventValue: 10
+    });
     this.router.navigate(['blogs']);
   }
 
