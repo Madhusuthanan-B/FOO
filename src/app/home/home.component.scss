@@ -18,14 +18,7 @@ section {
     &:hover {
         cursor: pointer;
         color: lighten($color: #19F2A1, $amount: 20%);
-        border-color: #6881DA;
     }
-}
-
-.banner {
-    color: #ffffff;
-    padding: 3rem;
-    text-align: center;
 }
 
 .header_container {
@@ -50,12 +43,8 @@ section {
     }
 }
 
-.banner_1 {
-    background: linear-gradient(to right, #8C4AF5, #6881DA);
-}
-
-.banner_2 {
-    background: linear-gradient(to right, #8C4AF5, #19F2A1);
+.banner {
+    @include banner(#8C4AF5, #19F2A1);
 
 }
 

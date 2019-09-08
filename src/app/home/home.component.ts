@@ -13,4 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  blogs() {
+    this.router.navigate(['blogs']);
+  }
+
 }
