@@ -11,6 +11,24 @@ export class HeaderComponent implements OnInit {
   closeButtonClass = '';
   isNavMenuOpen = false;
 
+  routes = [
+    {
+      displayName: 'Home',
+      routeName: 'home',
+      isActive: true
+    },
+    {
+      displayName: 'About Me',
+      routeName: 'about',
+      isActive: false
+    },
+    {
+      displayName: 'Blogs',
+      routeName: 'blogs',
+      isActive: false
+    }
+  ];
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -20,6 +38,13 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['home']);
   }
 
+
+  navigateTo(route: any) {
+    this.routes.forEach(r => r.isActive = false);
+    route.isActive = true;
+    this.toggleMenu();
+    this.router.navigate([route.routeName]);
+  }
   toggleMenu() {
     this.closeButtonClass = this.closeButtonClass === 'change' ? '' : 'change';
     this.isNavMenuOpen = !this.isNavMenuOpen;

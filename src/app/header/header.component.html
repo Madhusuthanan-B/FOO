@@ -1,14 +1,13 @@
 <header>
-    <div class="logo_wrapper"  (click)="home()">
+    <div class="logo_wrapper" (click)="home()">
         <img src="assets/svg/value.svg" alt="Foo logo">
         <h2 class="app_title">Foo</h2>
         <div class="caption">Tech Blogs</div>
     </div>
     <nav>
-        <a class="nav__link" [routerLink]="['/home']">Home</a>
-        <a class="nav__link" [routerLink]="['/about']">About Me</a>
-        <a class="nav__link" [routerLink]="['/blogs']">Blogs</a>
-        <!-- <a class="nav__link" href="#">Blogs</a> -->
+        <ng-container *ngFor="let nav of routes">
+            <a class="nav__link" [ngClass]="{'active': nav.isActive}" (click)="navigateTo(nav)">{{nav.displayName}}</a>
+        </ng-container>
         <div class="hamburger" *ngIf="!isNavMenuOpen" (click)="toggleMenu()">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -21,9 +20,8 @@
 <div id="mobileNav" *ngIf="isNavMenuOpen">
     <a href="javascript:void(0);" class="close" (click)="toggleMenu()"></a>
     <nav class="mobile-nav-menu">
-        <a class="nav__link" href="#">Home</a>
-        <a class="nav__link"  [routerLink]="['/about']">About Me</a>
-        <a class="nav__link" [routerLink]="['/blogs']">Blogs</a>
-        <!-- <a class="nav__link" href="#">Blogs</a> -->
+        <ng-container *ngFor="let nav of routes">
+            <a class="nav__link" (click)="navigateTo(nav)">{{nav.displayName}}</a>
+        </ng-container>
     </nav>
 </div>

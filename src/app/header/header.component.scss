@@ -66,8 +66,14 @@ nav {
 
         &:hover {
             border-bottom: 3px solid $base-menu;
+            cursor: pointer;
         }
     }
+
+    .active {
+        border-bottom: 3px solid $base-menu;
+    }
+
 
 }
 
