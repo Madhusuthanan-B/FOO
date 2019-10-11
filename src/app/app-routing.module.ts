@@ -16,10 +16,6 @@ const routes: Routes = [
   {
     path: 'blogs',
     loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule)
-  },
-  {
-    path: 'viewer',
-    loadChildren: () => import('./viewer/viewer.module').then(m => m.ViewerModule)
   }
 ];
 
