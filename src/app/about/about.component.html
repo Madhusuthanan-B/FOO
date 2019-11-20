@@ -19,28 +19,9 @@
         <section>
             <h3>Skills</h3>
             <div class="skills">
-                <ul>
-                    <li>Angular 2+ <app-rating [value]="4"></app-rating>
-                    </li>
-                    <li>TypeScript <app-rating [value]="4"></app-rating>
-                    </li>
-                    <li>JavaScript <app-rating [value]="4"></app-rating>
-                    </li>
-                    <li>Css / Sass <app-rating [value]="3"></app-rating>
-                    </li>
-                    <li>Html 5 <app-rating [value]="4"></app-rating>
-                    </li>
-                    <li>Bootstrap <app-rating [value]="3"></app-rating>
-                    </li>
-                    <li>.Net Core <app-rating [value]="3"></app-rating>
-                    </li>
-                    <li>C#<app-rating [value]="3"></app-rating>
-                    </li>
-                    <li>Unit Testing <app-rating [value]="4"></app-rating>
-                    </li>
-                    <li>TDD <app-rating [value]="4"></app-rating>
-                    </li>
-                </ul>
+                <ng-container *ngFor="let settings of skills">
+                    <app-radial-progress [props]="settings"></app-radial-progress>
+                </ng-container>
             </div>
             <h3>Experience With</h3>
             <div class="skills">

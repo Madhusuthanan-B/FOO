@@ -42,6 +42,7 @@ hr {
     .skills {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
 
         ul {
             display: flex;
