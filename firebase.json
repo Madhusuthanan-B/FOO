@@ -9,8 +9,11 @@
     "headers": [{
       "source":"**",
       "headers": [
-        {"key":"Content-Security-Policy","value":"script-src 'self'"},
-        {"key": "X-Frame-Options", "value": "sameorigin"}
+        {"key":"Content-Security-Policy","value":"default-src 'none'; img-src 'self'; script-src 'self'; style-src 'self'"},
+        {"key": "X-Frame-Options", "value": "sameorigin"},
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "X-UA-Compatible", "value": "ie=edge"},
+        {"key": "X-XSS-Protection", "value": "1; mode=block"}
       ]
     }],
     "rewrites": [
