@@ -1,17 +1,47 @@
 @import '_mixins';
 @import '_variables';
 
-.about_head {
+.about_wrapper {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    height: 100%;
+    ;
 
-    img {
-        height: 10rem;
-        width: 10rem;
-        border-radius: 50%;
+    .image_area {
+        max-width: 50%;
+        text-align: center;
+        padding: 20px;
+
+        img {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+        }
     }
+
+    .skill_area {
+        width: 100%;
+        padding: 20px;
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@include for-phone-only {
+    .about_wrapper {
+        flex-wrap: wrap;
+
+        .image_area {
+            max-width: 100%;
+        }
+    }
+}
+
+h3 {
+    text-align: center;
 }
 
 hr {
@@ -21,56 +51,4 @@ hr {
     border-top: 1px solid $primary;
     margin: 1em 3em;
     padding: 0;
-}
-
-.about_body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1em 3em;
-
-    p {
-        margin: 1em 2em;
-        text-align: center;
-    }
-
-    h3 {
-        text-align: center;
-        color: $primary;
-    }
-
-    .skills {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        li {
-            padding: 1rem;
-            list-style: none;
-            min-width: 200px;
-            max-width: 200px;
-        }
-    }
-}
-
-@include for-phone-only {
-    .about_body {
-        flex-direction: column;
-
-        .about_me {
-            max-width: 100%;
-        }
-
-        .skills {
-            li {
-                min-width: 100px;
-                max-width: 100px;
-            }
-        }
-    }
 }

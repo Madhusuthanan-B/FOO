@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { RadialProgress } from '../radial-progress/radial-progress.model';
 
 const skillWidgetDefaultProps = {
-  radius: 60,
+  radius: 55,
   fillTime: 10,
   label: '#adadad',
   frontEndColor: {
@@ -89,6 +89,19 @@ export class AboutComponent implements OnInit {
           name: '',
           color: skillWidgetDefaultProps.label,
           value: 'Html 5'
+        },
+        fillTime: 10
+      },
+      {
+        id: 'D3',
+        radius: skillWidgetDefaultProps.radius,
+        start: 0,
+        end: 0.50,
+        gradient: skillWidgetDefaultProps.frontEndColor,
+        label: {
+          name: '',
+          color: skillWidgetDefaultProps.label,
+          value: 'D3'
         },
         fillTime: 10
       },
