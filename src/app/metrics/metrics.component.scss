@@ -1,0 +1,23 @@
+// .line-chart {
+//     height: 100%;
+//     margin-bottom: 10px;
+// }
+
+// .metrics_wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .security_scan_history {
+//     border: 1px solid;
+// }
+
+#securityHistory {
+    min-height: 150px; 
+    
+    .tick {
+        color: #fff;
+    }
+}
+
