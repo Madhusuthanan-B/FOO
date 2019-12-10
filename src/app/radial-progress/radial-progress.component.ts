@@ -14,7 +14,7 @@ export class RadialProgressComponent implements OnInit {
   @ViewChild('radialChart', {static: true}) public radialChart: ElementRef;
   element: any;
   private radius = 100;
-  private border = 15;
+  private border = 5;
   private padding = 10;
   private startPercent = 0;
   private endPercent = 0.80;
