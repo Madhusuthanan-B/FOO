@@ -1,0 +1,47 @@
+:host {
+    .container {
+        display: flex;
+
+        section {
+            width: 100%;
+        }
+
+        section:first-child {
+            width: 40%;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+
+    gridster {
+        display: flex;
+        height: calc(100vh - 115px);
+        flex-direction: column;
+        background: linear-gradient(#0072ff, #19F2A1);
+    }
+
+    gridster-item {
+        background: black;
+
+        &:hover {
+            cursor: move;
+        }
+    }
+
+    button {
+        height: 30px;
+    }
+
+    .draggable {
+        padding: 10px;
+        width: 200px;
+        border: solid 2px #000;
+        margin-left: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+div {
+    background: black;
+}

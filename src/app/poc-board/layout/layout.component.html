@@ -1,0 +1,21 @@
+<section class="container">
+    <section>
+        <p>A quick prototype to demonstrate draggable tiles.
+            Open developer tools and check the console while dragging the tiles.
+        </p>
+        <p>
+            The x,y position of the tiles will be updated.
+            This x,y positions can be stored and render the re-arranged tiles next time
+            using the updated x,y.
+        </p>
+    </section>
+    <section>
+        <gridster [options]="options">
+            <gridster-item *ngFor="let item of layout" [item]="item">
+                <div>
+                    <app-radial-progress [props]="item.config"></app-radial-progress>
+                </div>
+            </gridster-item>
+        </gridster>
+    </section>
+</section>

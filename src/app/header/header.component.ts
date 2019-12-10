@@ -26,6 +26,11 @@ export class HeaderComponent implements OnInit {
       displayName: 'Blogs',
       routeName: 'blogs',
       isActive: false
+    },
+    {
+      displayName: 'POC Board',
+      routeName: 'pocs',
+      isActive: false
     }
   ];
 
