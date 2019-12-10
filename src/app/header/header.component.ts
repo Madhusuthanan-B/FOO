@@ -28,6 +28,11 @@ export class HeaderComponent implements OnInit {
       isActive: false
     },
     {
+      displayName: 'POC Board',
+      routeName: 'pocs',
+      isActive: false
+    },
+    {
       displayName: 'Metrics',
       routeName: 'metrics',
       isActive: false

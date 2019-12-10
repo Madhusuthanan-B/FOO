@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'metrics',
     loadChildren: () => import('./metrics/metrics.module').then(m => m.MetricsModule)
+  },
+  {
+    path: 'pocs',
+    loadChildren: () => import('./poc-board/poc-board.module').then(m => m.PocBoardModule)
   }
 ];
 

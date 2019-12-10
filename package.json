@@ -21,6 +21,8 @@
     "@angular/pwa": "^0.800.4",
     "@angular/router": "~8.0.1",
     "@angular/service-worker": "~8.0.1",
+    "angular-gridster2": "^8.2.0",
+    "angular2-uuid": "^1.1.1",
     "core-js": "^2.5.4",
     "d3": "^4.0.0",
     "font-awesome": "^4.7.0",
