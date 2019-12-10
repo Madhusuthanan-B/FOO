@@ -13,11 +13,15 @@
 //     border: 1px solid;
 // }
 
-#securityHistory {
-    min-height: 150px; 
+// #securityHistory {
+//     min-height: 150px; 
     
-    .tick {
-        color: #fff;
-    }
+//     .tick {
+//         color: #fff;
+//     }
+// }
+path .line {
+    fill: none;
+    stroke: #19F2A1;
 }
 
