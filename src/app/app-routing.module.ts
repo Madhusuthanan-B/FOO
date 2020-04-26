@@ -16,10 +16,6 @@ const routes: Routes = [
   {
     path: 'blogs',
     loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule)
-  },
-  {
-    path: 'pocs',
-    loadChildren: () => import('./poc-board/poc-board.module').then(m => m.PocBoardModule)
   }
 ];
 
