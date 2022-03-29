@@ -23,7 +23,7 @@
     "@angular/service-worker": "~9.1.7",
     "angular2-uuid": "^1.1.1",
     "core-js": "^2.5.4",
-    "d3": "^4.0.0",
+    "d3": "^7.0.0",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.5.5",
     "tslib": "^1.10.0",
